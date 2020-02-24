@@ -1,5 +1,9 @@
 #! /usr/bin/env zsh
 
+# uploads is a file, created manually from minechangelogs.
+# list kind of a temporary file.
+# the contents of to_post are posted to the blog.
+
 tac uploads | grep urgency > list
 
 cat list | while read line
