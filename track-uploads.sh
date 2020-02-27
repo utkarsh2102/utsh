@@ -1,4 +1,4 @@
-#! /usr/bin/env zsh
+#! /usr/bin/zsh
 
 # uploads is a file, created manually from minechangelogs.
 # list kind of a temporary file.

@@ -1,4 +1,4 @@
-#! /usr/bin/env zsh
+#! /usr/bin/zsh
 
 # to be run if you fucked up your system.
 # this uninstalls all the gems in the system.

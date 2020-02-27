@@ -1,4 +1,4 @@
-#! /usr/bin/env zsh
+#! /usr/bin/zsh
 
 # to be run when you fucked up your system.
 # this uninstalls all the ruby packages in the system.
