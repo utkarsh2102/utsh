@@ -1,4 +1,4 @@
-#! /usr/bin/env zsh
+#! /usr/bin/zsh
 
 # to be run after cloning all the repositories.
 # repositories can be cloned via mr from devscripts.

@@ -1,4 +1,4 @@
-#! /usr/bin/env zsh
+#! /usr/bin/zsh
 
 # this is going to be lethal.
 # try to avoid running this.
