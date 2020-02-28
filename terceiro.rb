@@ -1,5 +1,8 @@
 #!/usr/bin/ruby
 
+# to be run with the changelog entries (uploads file)
+# eg: cat uploads | ./terceiro.rb
+
 package = cve = bug = nil
 
 ARGF.each_line do |line|
