@@ -55,3 +55,45 @@ for gem in $(cat Gemfile); do
 	echo "8<----8<----8<----8<----8<"
 	echo ""
 done
+
+
+# fourth round of uninstallation.
+# gem uninstall /usr/lib/ruby/gems/2.7.0/specifications/default $gem
+
+echo "Round 4!"
+echo "TBD"
+
+
+# fifth round of uninstallation.
+# lethally rm -rf /var/lib/gems
+
+echo "Round 5!"
+echo ""
+echo "8<----8<----8<----8<"
+echo "Removing /var/lib/gems/"
+sudo rm -rf /var/lib/gems/
+echo "Removed!"
+echo "8<----8<----8<----8<"
+echo ""
+
+# sixth round of uninstallation.
+# BEWARE! KNOW WHAT YOU'RE DOING!
+# might even break the system :/
+
+echo "Round 6!"
+echo ""
+echo "8<----8<----8<----8<"
+echo "Removing /usr/lib/gems/"
+sudo rm -rf /usr/lib/ruby/
+echo "Removed!"
+echo "8<----8<----8<----8<"
+echo ""
+
+echo "YOU'RE DONE!"
+echo "Please go an check how badly you broke your system."
+echo "It'd be advisable to run apt update --fix-missing."
+echo "Running it.."
+sudo apt update --fix-missing
+echo "Done. Should be okay, now."
+
+echo "EXITING.."
