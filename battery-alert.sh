@@ -1,4 +1,9 @@
 #! /usr/bin/zsh
+
+set -a
+source environment        # bash -> env > environment -> exit
+set +a
+
 # Copyright 2020, Utkarsh Gupta <utkarsh@debian.org>
 
 # to be run for the first time only :)
@@ -39,3 +44,12 @@ then
   # echo "VISIBLE?"        # uncomment for debugging
   espeak -g 10 -a 200 -p 99 "PUT ON CHARGING, YOU STUPID PERSON!"
 fi
+
+# to run this script every 30 minutes, do the following:
+# crontab -e
+# */15 * * * * /home/utkarsh/battery-alert.sh
+# save and exit; you're good to go!
+# additionally, if you don't want to receive mail for each job, do the following:
+# crontab -e
+# on the very first line, set: MAILTO=""
+# save and exit; you're good to go!
