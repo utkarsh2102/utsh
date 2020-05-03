@@ -11,7 +11,7 @@ do
     package=`echo $line | awk '{print $1}'`
     version=`echo $line | awk '{print $2}'`
     suite=`echo $line | awk '{print $3}'`
-    echo "[$package](https://tracker.debian.org/pkg/$package) (${version:1:-1}) to ${suite: : -1}." >> to_post
+    echo "[$package](https://tracker.debian.org/pkg/$package) (${version:1:-1}) - ." >> to_post
 done
 
 rm list

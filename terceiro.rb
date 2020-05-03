@@ -15,6 +15,6 @@ ARGF.each_line do |line|
   end
   if line =~ /Closes: (#\d+)/
     bug = $1
-    puts "- [#{bug}](https://bugs.debian.org/#{bug}) for [#{package}](https://tracker.debian.org/pkg/#{package})" + (cve || "") + ".  "
+    puts "- ([#{bug}](https://bugs.debian.org/#{bug})) for #{package}" + (cve || "") + ".  "
   end
 end
