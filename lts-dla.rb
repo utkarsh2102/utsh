@@ -8,7 +8,7 @@ fix = ""
 file = File.read('dla')
 file.each_line do |line|
   if line =~ /Package/
-    package = line.scan(/\w+/).last
+    package = line.split(': ', 2).last.chomp
   end
 
   if line =~ /Version/
