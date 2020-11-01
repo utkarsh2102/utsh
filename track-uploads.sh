@@ -15,7 +15,6 @@ do
 done
 
 sed -i 's/^/- /' to_post
-sed -i 's/$/  /' to_post
 
 cat to_post
 
