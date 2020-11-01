@@ -14,6 +14,10 @@ do
     echo "[$package](https://tracker.debian.org/pkg/$package) (${version:1:-1}) - ." >> to_post
 done
 
-rm list
 sed -i 's/^/- /' to_post
 sed -i 's/$/  /' to_post
+
+cat to_post
+
+rm list
+rm to_post
