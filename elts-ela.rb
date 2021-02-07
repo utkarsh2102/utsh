@@ -39,7 +39,7 @@ end
 
 sentence1 = "- Issued [ELA #{ela}-1](), fixing #{fix}, for " \
             "[#{package}](https://tracker.debian.org/pkg/#{package}).  "
-sentence2 = "  For Debian 8 Jessie, these problems have been fixed in version #{version}."
+sentence2 = "  For Debian 8 jessie, these problems have been fixed in version #{version}."
 
 puts sentence1
 puts sentence2
