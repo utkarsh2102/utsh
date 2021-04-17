@@ -1,0 +1,9 @@
+#! /bin/zsh
+
+# Helps unmounting Debian on /mnt from Ubuntu.
+
+sudo umount /mnt/home/
+sudo umount /mnt/dev
+sudo umount /mnt/sys
+sudo umount /mnt/proc
+sudo umount /mnt
