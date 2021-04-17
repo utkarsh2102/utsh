@@ -1,0 +1,11 @@
+#! /bin/zsh
+
+# Helps mounting Debian on /mnt from Ubuntu.
+
+sudo mount /dev/nvme0n1p5 /mnt
+sudo mount -t proc proc /mnt/proc
+sudo mount -t sysfs sys /mnt/sys
+sudo mount -o bind /dev /mnt/dev
+sudo mount /dev/nvme0n1p6 /mnt/home/
+sudo rm /mnt/etc/resolv.conf
+sudo cp /etc/resolv.conf /mnt/etc/resolv.conf
