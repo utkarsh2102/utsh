@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-# Helps unmounting Debian on /mnt from Ubuntu.
+# Helps unmounting Debian/Ubuntu from /mnt from Ubuntu/Debian.
 
 sudo umount /mnt/home/
 sudo umount /mnt/dev
