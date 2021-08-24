@@ -20,3 +20,4 @@ cat to_post
 
 rm list
 rm to_post
+rm uploads
